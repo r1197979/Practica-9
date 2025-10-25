@@ -1,9 +1,21 @@
 package practica9;
 
+import java.util.Scanner;
+
 public class MisionPosibleMain {
 
     public static void main(String[] args){
         
+        Scanner sc= new Scanner(System.in);
+        String archivo= "archivoConfiguracion";
+
+        
+        System.out.println("Posicion roca X: ");
+        int bX= sc.nextInt();
+        System.out.println("Posicion roca Y: ");
+        int bY= sc.nextInt();
+
+
         Escenario e= new Escenario("Nostromo");
         e.agregarElemento(new Terricola(e,new Posicion(3,2),"Ripley"));
         e.agregarElemento(new Extraterrestre(e,new Posicion(3,5),"Alien"));
@@ -17,4 +29,5 @@ public class MisionPosibleMain {
         System.out.println(e);
         
     }
+
 }

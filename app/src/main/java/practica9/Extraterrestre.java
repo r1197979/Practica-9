@@ -11,4 +11,9 @@ public class Extraterrestre extends Personaje{
     public String destruir(){
         return "Alien destruido!";
     }
+
+    @Override
+    public String toString() {
+    return "Extraterrestre " + posicion.getRenglon() + " " + posicion.getColumna() + " " + nombre;
+}
 }

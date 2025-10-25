@@ -10,4 +10,8 @@ public class Terricola extends Personaje{
     public String destruir(){
         return "Terricola destruido";
     }
+
+    public String toString() {
+    return "Terricola " + posicion.getRenglon() + " " + posicion.getColumna() + " " + nombre;
+}
 }

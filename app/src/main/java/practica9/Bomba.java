@@ -18,4 +18,8 @@ public class Bomba extends Elemento implements Destruible{
         System.out.println("Explotando bomba!");
         escenario.destruirElementos(posicion, radio);
     }
+
+    public String toString(){
+    return super.toString()+" "+radio;
+}
 }
